@@ -2,6 +2,10 @@
 
 In progress.
 
+### Deployed
+
+[https://cocky-meninsky-8a953a.netlify.com/](Link)
+
 The purpose of this repo is to make a Web App that will sort out css properties base on type.
 
 ### ToDo
