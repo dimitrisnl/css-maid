@@ -1,6 +1,6 @@
 # CSS Maid
 
-[https://cssmaid.netlify.com/](Link)
+[https://cssmaid.netlify.com/](https://cssmaid.netlify.com/)
 
 ### Huh?
 
