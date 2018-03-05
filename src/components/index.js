@@ -28,26 +28,28 @@ export const Header = styled('h1')`
 `;
 
 export const TextArea = styled('textarea')`
-  height: 60%;
-  width: 100%;
-  max-width: 800px;
-  box-shadow: 0 0 1px 4px #ffffff80;
   border: 0;
-  padding: 2rem;
+  box-shadow: 0 0 1px 4px #ffffff80;
   overflow: auto;
+  padding: 2rem;
+
+  flex: 0 0 48%;
+
+  color: #797979;
 
   font-family: inherit;
   font-size: inherit;
 
   border-radius: 8px;
+  opacity: 0.9;
+  outline: none;
   resize: none;
-  opacity: 0.8;
 `;
 
 export const Button = styled('button')`
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1.25rem;
   border: 3px solid #ffffff90;
-  margin-top: 1rem;
+  margin: 2rem 1rem 0;
 
   background: transparent;
   color: #fff;
@@ -66,4 +68,13 @@ export const Button = styled('button')`
   &:active {
     background: #ffffff50;
   }
+`;
+
+export const Container = styled('div')`
+  display: flex;
+  height: 60%;
+  max-width: 1200px;
+  width: 100%;
+
+  justify-content: space-between;
 `;

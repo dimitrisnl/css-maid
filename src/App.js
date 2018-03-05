@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import { injectGlobal } from 'react-emotion';
 import GithubCorner from 'react-github-corner';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 import { format } from './utils/functions';
-import { Wrapper, Header, TextArea, Button } from './components';
+import { Wrapper, Header, TextArea, Button, Container } from './components';
 
 class App extends Component {
   state = {
     userStyles: '',
+    formattedStyles: '',
   };
 
   handleInput = e => {
@@ -18,19 +20,32 @@ class App extends Component {
     if (this.state.userStyles.trim() === '') return false;
 
     const formattedText = format(this.state.userStyles);
-    this.setState({ userStyles: formattedText });
+    this.setState({ formattedStyles: formattedText });
   };
 
   render() {
     return (
       <Wrapper>
         <Header>CSS MAID</Header>
-        <TextArea
-          placeholder="Please don't post your css here"
-          value={this.state.userStyles}
-          onChange={this.handleInput}
-        />
-        <Button onClick={this.formatCSS}>Just do it</Button>
+        <Container>
+          <TextArea
+            placeholder="Your CSS goes here"
+            value={this.state.userStyles}
+            onChange={this.handleInput}
+          />
+          <TextArea
+            placeholder="Any changes will apper here"
+            value={this.state.formattedStyles}
+          />
+        </Container>
+        <div>
+          <Button onClick={this.formatCSS}>Format</Button>
+
+          <CopyToClipboard text={this.state.formattedStyles}>
+            <Button>Copy to clipboard</Button>
+          </CopyToClipboard>
+        </div>
+
         <GithubCorner
           href="https://github.com/DimitrisNL/css-maid"
           bannerColor="#e684ae"
