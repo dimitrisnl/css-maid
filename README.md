@@ -1,12 +1,45 @@
 # CSS Maid
 
-In progress.
+🚧 🚧 In progress 🚧 🚧
+
+### Huh?
+
+Your CSS rules could look like this:
+
+```
+background-color: green;
+color: white;
+padding: 10px 25px;
+text-align: center;
+text-decoration: none;
+display: inline-block;`
+```
+
+CSS Maid tranforms it as follows:
+
+```
+padding: 10px 25px;
+display: inline-block;
+
+background-color: green;
+color: white;
+
+text-align: center;
+text-decoration: none;
+```
+
+We sort the properties based on
+
+1.  Positioning
+2.  Display
+3.  Flex
+4.  Color
+5.  Font
+6.  Anything Else
 
 ### Deployed
 
 [https://cocky-meninsky-8a953a.netlify.com/](Link)
-
-The purpose of this repo is to make a Web App that will sort out css properties base on type.
 
 ### ToDo
 
@@ -18,45 +51,6 @@ The purpose of this repo is to make a Web App that will sort out css properties 
 * [ ] Optimize for SCSS
 * [ ] Optimize for Emotion-based components
 
-### Sneak peak
+### Licence
 
-```
-const POSITIONING = ['position', 'z-index', 'top', 'right', 'left', 'bottom'];
-
-const BOX_MODEL = [
-  'display',
-  'overflow',
-  'box-sizing',
-  'width',
-  'max-width',
-  'height',
-  'max-height',
-  ...ruleWithDirections('border'),
-  ...ruleWithDirections('padding'),
-  ...ruleWithDirections('margin'),
-  'box-shadow',
-];
-
-const FLEX = [
-  'flex',
-  'flex-grow',
-  'flex-shrink',
-  'flex-basis',
-  'justify-content',
-  'align-items',
-  'align-content',
-  'align-self',
-  'order',
-];
-
-const COLOR = ['background', 'color'];
-
-const FONT = [
-  'font-family',
-  'font-size',
-  'line-height',
-  'text-align',
-  'text-shadow',
-  'letter-spacing',
-];
-```
+MIT
