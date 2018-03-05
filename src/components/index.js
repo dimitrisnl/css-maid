@@ -55,8 +55,9 @@ export const Button = styled('button')`
   text-shadow: 1px 1px 2px black;
   font-size: 1rem;
 
-  cursor: pointer;
   transition: all 0.1s ease-in-out;
+
+  cursor: pointer;
   border-radius: 8px;
 
   &:active {
