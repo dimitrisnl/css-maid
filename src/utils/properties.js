@@ -50,6 +50,7 @@ export const COLOR = ['background', 'background-color', 'color'];
 export const FONT = [
   'font-family',
   'font-size',
+  'font-weight',
   'line-height',
   'text-align',
   'text-shadow',
