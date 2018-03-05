@@ -31,7 +31,7 @@ export const TextArea = styled('textarea')`
   height: 60%;
   width: 100%;
   max-width: 800px;
-  box-shadow: 0 0 1px 1px #efefef;
+  box-shadow: 0 0 1px 4px #ffffff80;
   border: 0;
   padding: 2rem;
   overflow: auto;
@@ -46,21 +46,24 @@ export const TextArea = styled('textarea')`
 
 export const Button = styled('button')`
   padding: 0.5rem 1rem;
-  border: 2px solid #fff;
+  border: 3px solid #ffffff90;
   margin-top: 1rem;
 
   background: transparent;
   color: #fff;
 
   text-shadow: 1px 1px 2px black;
-  font-size: 1rem;
+  font-size: 1.1rem;
 
   transition: all 0.1s ease-in-out;
 
   cursor: pointer;
   border-radius: 8px;
 
+  &:hover {
+    background: #ffffff20;
+  }
   &:active {
-    transform: scale(0.95);
+    background: #ffffff50;
   }
 `;
