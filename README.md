@@ -7,25 +7,31 @@
 Your CSS rules could look like this:
 
 ```
-background-color: green;
-color: white;
-padding: 10px 25px;
-text-align: center;
-text-decoration: none;
-display: inline-block;`
+a:link, a:visited, a:hover, a:active {
+  background-color: green;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
 ```
 
 CSS Maid tranforms it as follows:
 
 ```
-padding: 10px 25px;
-display: inline-block;
+a:link, a:visited, a:hover, a:active {
 
-background-color: green;
-color: white;
+  padding: 10px 25px;
+  display: inline-block;
 
-text-align: center;
-text-decoration: none;
+  background-color: green;
+  color: white;
+
+  text-align: center;
+  text-decoration: none;
+
+}
 ```
 
 We sort the properties based on
