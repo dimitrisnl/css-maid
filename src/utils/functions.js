@@ -68,6 +68,7 @@ export const format = (string = '') => {
 
     content = Object.values(properties)
       .filter(value => value.length > 0)
+      .map(value => value.sort())
       .map(value => value.join(''))
       .reduce((output, value) => output + value + '\n', '');
 

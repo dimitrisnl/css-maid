@@ -1,6 +1,6 @@
 # CSS Maid
 
-🚧 🚧 In progress 🚧 🚧
+[https://cocky-meninsky-8a953a.netlify.com/](Link)
 
 ### Huh?
 
@@ -22,8 +22,8 @@ CSS Maid tranforms it as follows:
 ```
 a:link, a:visited, a:hover, a:active {
 
-  padding: 10px 25px;
   display: inline-block;
+  padding: 10px 25px;
 
   background-color: green;
   color: white;
@@ -44,20 +44,6 @@ We sort the properties based on
 6.  Grid
 7.  Transitions
 8.  Anything Else
-
-### Deployed
-
-[https://cocky-meninsky-8a953a.netlify.com/](Link)
-
-### ToDo
-
-* [x] Parse styles and do some alpha sorting
-* [ ] Secondary sort by name
-* [ ] Validate input
-* [ ] Deploy to Netlify
-* [ ] Optimize for SASS
-* [ ] Optimize for SCSS
-* [ ] Optimize for Emotion-based components
 
 ### Licence
 
