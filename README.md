@@ -4,11 +4,10 @@ In progress.
 
 The purpose of this repo is to make a Web App that will sort out css properties base on type.
 
-### ToDO
+### ToDo
 
-* [ ] Extract base html elements as components
-* [ ] Use some consistent color palette & import it from `utils/color.js`
-* [ ] Parse styles and do some alpha sorting
+* [x] Parse styles and do some alpha sorting
+* [ ] Secondary sort by name
 * [ ] Validate input
 * [ ] Deploy to Netlify
 * [ ] Optimize for SASS

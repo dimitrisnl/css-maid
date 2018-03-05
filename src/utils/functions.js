@@ -1,6 +1,6 @@
 import { POSITIONING, BOX_MODEL, FLEX, COLOR, FONT } from './properties';
 
-export const format = string => {
+export const format = (string = '') => {
   try {
     const properties = {
       positioning: [],
@@ -26,6 +26,11 @@ export const format = string => {
 
       declaration = declaration.trim();
       value = value.trim();
+
+      // add trailing semicolor
+      if (value[value.length - 1] !== ';') {
+        value += ';';
+      }
 
       const formattedRule = `${declaration}: ${value}\n`;
 
