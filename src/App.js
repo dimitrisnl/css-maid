@@ -6,6 +6,10 @@ class App extends Component {
     userStyles: '',
   };
 
+  handleInput = e => {
+    this.setState({ userStyles: e.target.value });
+  };
+
   formatCSS = () => {
     this.setState({ userStyles: 'temp' });
   };
@@ -15,7 +19,8 @@ class App extends Component {
       <StyledApp>
         <TextArea
           placeholder="Please don't post your css here"
-          value="userStyles"
+          value={this.state.userStyles}
+          onChange={this.handleInput}
         />
         <button onClick={this.formatCSS}>Just do it</button>
       </StyledApp>
