@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { injectGlobal } from 'react-emotion';
+import GithubCorner from 'react-github-corner';
 
 import { format } from './utils/functions';
 import { Wrapper, Header, TextArea, Button } from './components';
@@ -30,6 +31,10 @@ class App extends Component {
           onChange={this.handleInput}
         />
         <Button onClick={this.formatCSS}>Just do it</Button>
+        <GithubCorner
+          href="https://github.com/DimitrisNL/css-maid"
+          bannerColor="#e684ae"
+        />
       </Wrapper>
     );
   }
