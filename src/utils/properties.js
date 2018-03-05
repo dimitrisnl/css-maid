@@ -52,5 +52,6 @@ export const FONT = [
   'line-height',
   'text-align',
   'text-shadow',
+  'text-decoration',
   'letter-spacing',
 ];

@@ -47,8 +47,8 @@ export const format = string => {
 
     const output = Object.values(properties)
       .filter(value => value.length > 0)
-      .map(value => value.join('\n'))
-      .reduce((output, value) => output + value, '');
+      .map(value => value.join(''))
+      .reduce((output, value) => output + value + '\n', '');
 
     return output;
   } catch (e) {
