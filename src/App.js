@@ -5,7 +5,7 @@ class App extends Component {
   render() {
     return (
       <StyledApp>
-        <TextArea />
+        <TextArea placeholder="Please don't post your css here" />
       </StyledApp>
     );
   }
@@ -20,8 +20,11 @@ const StyledApp = styled('div')`
   padding: 1rem;
 
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+
+  background: #485563;
+  background: linear-gradient(to right, #29323c, #485563);
 `;
 
 const TextArea = styled('textarea')`
@@ -29,17 +32,24 @@ const TextArea = styled('textarea')`
   width: 100%;
   max-width: 800px;
 
-  border: 1px solid tomato;
+  box-shadow: 0 0 1px 1px #efefef;
+  background: #efefef;
+  border: 0;
+  padding: 2rem;
+  overflow: auto;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: inherit;
 
   resize: none;
 `;
 
 injectGlobal`
-  *{
+  * {
     box-sizing:border-box;
   }
 
-  body{
+  body {
     margin: 0;
     padding: 0;
 
@@ -49,7 +59,7 @@ injectGlobal`
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   }
 
-  #root{
+  #root {
     width: 100%;
     height: 100%;
   }
