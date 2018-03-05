@@ -70,9 +70,10 @@ export const format = (string = '') => {
       .filter(value => value.length > 0)
       .map(value => value.sort())
       .map(value => value.join(''))
-      .reduce((output, value) => output + value + '\n', '');
+      .reduce((output, value) => [...output, value], [])
+      .join('\n');
 
-    content = `{\n\n${content}}`;
+    content = `{\n${content}}`;
     return string.replace(/\{([^}]+)\}/g, content);
   } catch (e) {
     console.log(e);

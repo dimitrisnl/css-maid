@@ -21,7 +21,6 @@ CSS Maid tranforms it as follows:
 
 ```
 a:link, a:visited, a:hover, a:active {
-
   display: inline-block;
   padding: 10px 25px;
 
@@ -30,7 +29,6 @@ a:link, a:visited, a:hover, a:active {
 
   text-align: center;
   text-decoration: none;
-
 }
 ```
 
