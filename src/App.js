@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import styled, { injectGlobal } from 'react-emotion';
 
+import { format } from './utils/functions';
+
 class App extends Component {
   state = {
     userStyles: '',
@@ -11,7 +13,8 @@ class App extends Component {
   };
 
   formatCSS = () => {
-    this.setState({ userStyles: 'temp' });
+    const formattedText = format(this.state.userStyles);
+    this.setState({ userStyles: formattedText });
   };
 
   render() {

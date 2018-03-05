@@ -1,8 +1,23 @@
-import { ruleWithDirections } from './functions';
+const ruleWithDirections = string => {
+  return [
+    string,
+    `${string}-top`,
+    `${string}-right`,
+    `${string}-bottom`,
+    `${string}-left`,
+  ];
+};
 
-const POSITIONING = ['position', 'z-index', 'top', 'right', 'left', 'bottom'];
+export const POSITIONING = [
+  'position',
+  'z-index',
+  'top',
+  'right',
+  'left',
+  'bottom',
+];
 
-const BOX_MODEL = [
+export const BOX_MODEL = [
   'display',
   'overflow',
   'box-sizing',
@@ -10,13 +25,13 @@ const BOX_MODEL = [
   'max-width',
   'height',
   'max-height',
+  'box-shadow',
   ...ruleWithDirections('border'),
   ...ruleWithDirections('padding'),
   ...ruleWithDirections('margin'),
-  'box-shadow',
 ];
 
-const FLEX = [
+export const FLEX = [
   'flex',
   'flex-grow',
   'flex-shrink',
@@ -29,9 +44,9 @@ const FLEX = [
   'order',
 ];
 
-const COLOR = ['background', 'color'];
+export const COLOR = ['background', 'background-color', 'color'];
 
-const FONT = [
+export const FONT = [
   'font-family',
   'font-size',
   'line-height',
