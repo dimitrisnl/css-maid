@@ -15,6 +15,7 @@ export const POSITIONING = [
   'right',
   'left',
   'bottom',
+  'float',
 ];
 
 export const BOX_MODEL = [
@@ -54,4 +55,33 @@ export const FONT = [
   'text-shadow',
   'text-decoration',
   'letter-spacing',
+];
+
+export const TRANSITIONS = [
+  'transition',
+  'transition-delay',
+  'transition-duration',
+  'transition-property',
+  'transition-timing-function',
+];
+
+export const GRID = [
+  'grid',
+  'grid-area',
+  'grid-auto-columns',
+  'grid-auto-flow',
+  'grid-auto-rows',
+  'grid-column',
+  'grid-column-end',
+  'grid-column-gap',
+  'grid-column-start',
+  'grid-gap',
+  'grid-row',
+  'grid-row-end',
+  'grid-row-gap',
+  'grid-row-start',
+  'grid-template',
+  'grid-template-areas',
+  'grid-template-columns',
+  'grid-template-rows',
 ];

@@ -41,7 +41,9 @@ We sort the properties based on
 3.  Flex
 4.  Color
 5.  Font
-6.  Anything Else
+6.  Grid
+7.  Transitions
+8.  Anything Else
 
 ### Deployed
 

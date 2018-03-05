@@ -1,4 +1,12 @@
-import { POSITIONING, BOX_MODEL, FLEX, COLOR, FONT } from './properties';
+import {
+  POSITIONING,
+  BOX_MODEL,
+  FLEX,
+  COLOR,
+  FONT,
+  GRID,
+  TRANSITIONS,
+} from './properties';
 
 export const format = (string = '') => {
   try {
@@ -8,6 +16,8 @@ export const format = (string = '') => {
       flex: [],
       color: [],
       font: [],
+      grid: [],
+      transitions: [],
       rest: [],
     };
 
@@ -47,6 +57,10 @@ export const format = (string = '') => {
         properties.color.push(formattedRule);
       } else if (FONT.includes(declaration)) {
         properties.font.push(formattedRule);
+      } else if (GRID.includes(declaration)) {
+        properties.grid.push(formattedRule);
+      } else if (TRANSITIONS.includes(declaration)) {
+        properties.transitions.push(formattedRule);
       } else {
         properties.rest.push(formattedRule);
       }
