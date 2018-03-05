@@ -17,7 +17,7 @@ a:link, a:visited, a:hover, a:active {
 }
 ```
 
-CSS Maid tranforms it as follows:
+CSS Maid transforms it as follows:
 
 ```
 a:link, a:visited, a:hover, a:active {
