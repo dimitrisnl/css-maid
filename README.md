@@ -1,6 +1,6 @@
 # CSS Maid
 
-[https://cocky-meninsky-8a953a.netlify.com/](Link)
+[https://cssmaid.netlify.com/](Link)
 
 ### Huh?
 
