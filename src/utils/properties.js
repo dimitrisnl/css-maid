@@ -1,12 +1,5 @@
-# CSS Maid
+import { ruleWithDirections } from './functions';
 
-In progress.
-
-The purpose of this repo is to make a Web App that will sort out css properties base on type
-
-Sneak peak
-
-```
 const POSITIONING = ['position', 'z-index', 'top', 'right', 'left', 'bottom'];
 
 const BOX_MODEL = [
@@ -45,4 +38,3 @@ const FONT = [
   'text-shadow',
   'letter-spacing',
 ];
-```

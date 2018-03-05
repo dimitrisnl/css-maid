@@ -14,22 +14,24 @@ class App extends Component {
 export default App;
 
 const StyledApp = styled('div')`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
   height: 100%;
   width: 100%;
 
   padding: 1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 const TextArea = styled('textarea')`
-  border: 1px solid tomato;
-  resize: none;
   height: 80%;
   width: 100%;
   max-width: 800px;
+
+  border: 1px solid tomato;
+
+  resize: none;
 `;
 
 injectGlobal`
@@ -43,6 +45,8 @@ injectGlobal`
 
     height: 100vh;
     width: 100vw;
+
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   }
 
   #root{
