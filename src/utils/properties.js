@@ -21,6 +21,7 @@ const FLEX = [
   'flex-grow',
   'flex-shrink',
   'flex-basis',
+  'flex-direction',
   'justify-content',
   'align-items',
   'align-content',

@@ -2,10 +2,22 @@ import React, { Component } from 'react';
 import styled, { injectGlobal } from 'react-emotion';
 
 class App extends Component {
+  state = {
+    userStyles: '',
+  };
+
+  formatCSS = () => {
+    this.setState({ userStyles: 'temp' });
+  };
+
   render() {
     return (
       <StyledApp>
-        <TextArea placeholder="Please don't post your css here" />
+        <TextArea
+          placeholder="Please don't post your css here"
+          value="userStyles"
+        />
+        <button onClick={this.formatCSS}>Just do it</button>
       </StyledApp>
     );
   }
@@ -20,6 +32,7 @@ const StyledApp = styled('div')`
   padding: 1rem;
 
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 
