@@ -16,8 +16,10 @@ export const format = (string = '') => {
       string = string.replace('\n\n', '\n');
     }
 
+    // Get everything between curly braces
+    let content = string.match(/\{([^}]+)\}/g).map(str => str.slice(1, -1))[0];
     // Split each rule
-    const arr = string.trim().split('\n');
+    const arr = content.trim().split('\n');
 
     arr.forEach(rule => {
       // Split by semicolons
@@ -32,7 +34,7 @@ export const format = (string = '') => {
         value += ';';
       }
 
-      const formattedRule = `${declaration}: ${value}\n`;
+      const formattedRule = `  ${declaration}: ${value}\n`;
 
       // TODO: Revisit the whole block
       if (POSITIONING.includes(declaration)) {
@@ -50,12 +52,13 @@ export const format = (string = '') => {
       }
     });
 
-    const output = Object.values(properties)
+    content = Object.values(properties)
       .filter(value => value.length > 0)
       .map(value => value.join(''))
       .reduce((output, value) => output + value + '\n', '');
 
-    return output;
+    content = `{\n\n${content}}`;
+    return string.replace(/\{([^}]+)\}/g, content);
   } catch (e) {
     console.log(e);
     return 'Something Went Wrong';
