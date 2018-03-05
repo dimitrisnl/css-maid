@@ -17,7 +17,7 @@ export const format = string => {
     }
 
     // Split each rule
-    const arr = string.split('\n');
+    const arr = string.trim().split('\n');
 
     arr.forEach(rule => {
       // Split by semicolons
