@@ -6,14 +6,14 @@ The purpose of this repo is to make a Web App that will sort out css properties 
 
 ### ToDO
 
-[ ] Extract base html elements as components
-[ ] Use some consistent color palette & import it from `utils/color.js`
-[ ] Parse styles and do some alpha sorting
-[ ] Validate input
-[ ] Deploy to Netlify
-[ ] Optimize for SASS
-[ ] Optimize for SCSS
-[ ] Optimize for Emotion-based components
+* [ ] Extract base html elements as components
+* [ ] Use some consistent color palette & import it from `utils/color.js`
+* [ ] Parse styles and do some alpha sorting
+* [ ] Validate input
+* [ ] Deploy to Netlify
+* [ ] Optimize for SASS
+* [ ] Optimize for SCSS
+* [ ] Optimize for Emotion-based components
 
 ### Sneak peak
 
