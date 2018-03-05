@@ -45,7 +45,15 @@ export const FLEX = [
   'order',
 ];
 
-export const COLOR = ['background', 'background-color', 'color'];
+export const COLOR = [
+  'background',
+  'background-color',
+  'background-image',
+  'background-repeat',
+  'background-attachment',
+  'background-position',
+  'color',
+];
 
 export const FONT = [
   'font-family',
