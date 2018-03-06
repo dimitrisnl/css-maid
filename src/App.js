@@ -19,8 +19,8 @@ class App extends Component {
   formatCSS = () => {
     if (this.state.userStyles.trim() === '') return false;
 
-    const formattedText = format(this.state.userStyles);
-    this.setState({ formattedStyles: formattedText });
+    const formattedStyles = format(this.state.userStyles);
+    this.setState({ formattedStyles });
   };
 
   render() {
