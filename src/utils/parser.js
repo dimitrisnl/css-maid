@@ -56,6 +56,6 @@ export const parseCSS = (css = '') => {
     return ast.toString();
   } catch (e) {
     console.log(e);
-    return 'Something Went Wrong';
+    return 'Huh, Something went wrong 🤔\n\nMake sure you wrote valid CSS.\nNote that SASS or LESS format is not supported at the moment.';
   }
 };
