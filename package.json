@@ -5,6 +5,7 @@
   "author": "Dimitrios Lytras <dnlytras@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "gonzales-pe": "^4.2.3",
     "react": "^16.2.0",
     "react-copy-to-clipboard": "^5.0.1",
     "react-dom": "^16.2.0",

@@ -8,7 +8,7 @@ const ruleWithDirections = string => {
   ];
 };
 
-export const POSITIONING = [
+export const positioning = [
   'position',
   'z-index',
   'top',
@@ -18,7 +18,7 @@ export const POSITIONING = [
   'float',
 ];
 
-export const BOX_MODEL = [
+export const boxModel = [
   'display',
   'overflow',
   'box-sizing',
@@ -32,7 +32,7 @@ export const BOX_MODEL = [
   ...ruleWithDirections('margin'),
 ];
 
-export const FLEX = [
+export const flex = [
   'flex',
   'flex-grow',
   'flex-shrink',
@@ -45,7 +45,7 @@ export const FLEX = [
   'order',
 ];
 
-export const COLOR = [
+export const color = [
   'background',
   'background-color',
   'background-image',
@@ -55,7 +55,7 @@ export const COLOR = [
   'color',
 ];
 
-export const FONT = [
+export const font = [
   'font-family',
   'font-size',
   'font-weight',
@@ -66,7 +66,7 @@ export const FONT = [
   'letter-spacing',
 ];
 
-export const TRANSITIONS = [
+export const transitions = [
   'transition',
   'transition-delay',
   'transition-duration',
@@ -74,7 +74,7 @@ export const TRANSITIONS = [
   'transition-timing-function',
 ];
 
-export const GRID = [
+export const grid = [
   'grid',
   'grid-area',
   'grid-auto-columns',
