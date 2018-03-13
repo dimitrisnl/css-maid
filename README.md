@@ -47,6 +47,14 @@ We group properties by these types:
 9.  Animation
 10. Anything Else
 
-### Licence
+## Support
+
+Please [open an issue](https://github.com/DimitrisNL/css-maid/issues/new) for support.
+
+## Contributing
+
+Feel free to report any issues or provide any feedback you may have.
+
+## Licence
 
 MIT
