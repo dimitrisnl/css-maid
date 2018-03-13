@@ -72,7 +72,7 @@ export const Button = styled('button')`
 
 export const Container = styled('div')`
   display: flex;
-  height: 60%;
+  height: 70%;
   max-width: 1200px;
   width: 100%;
 
