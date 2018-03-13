@@ -3,7 +3,7 @@ import { injectGlobal } from 'react-emotion';
 import GithubCorner from 'react-github-corner';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 
-import { format } from './utils/functions';
+import { parseCSS } from './utils/parser';
 import { Wrapper, Header, TextArea, Button, Container } from './components';
 
 class App extends Component {
@@ -19,7 +19,7 @@ class App extends Component {
   formatCSS = () => {
     if (this.state.userStyles.trim() === '') return false;
 
-    const formattedStyles = format(this.state.userStyles);
+    const formattedStyles = parseCSS(this.state.userStyles);
     this.setState({ formattedStyles });
   };
 

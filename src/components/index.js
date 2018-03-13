@@ -37,8 +37,11 @@ export const TextArea = styled('textarea')`
 
   color: #797979;
 
-  font-family: inherit;
-  font-size: inherit;
+  font-family: 'Fira Code', Hack, Consolas, Menlo, Monaco, 'Andale Mono WT',
+    'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter',
+    'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono',
+    'Nimbus Mono L', 'Courier New', Courier, monospace;
+  font-size: 14px;
 
   border-radius: 8px;
   opacity: 0.9;
@@ -72,7 +75,7 @@ export const Button = styled('button')`
 
 export const Container = styled('div')`
   display: flex;
-  height: 60%;
+  height: 70%;
   max-width: 1200px;
   width: 100%;
 
