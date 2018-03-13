@@ -28,6 +28,10 @@ export const boxModel = [
   'max-height',
   'box-shadow',
   ...ruleWithDirections('border'),
+  ...ruleWithDirections('border-color'),
+  ...ruleWithDirections('border-style'),
+  'border-width',
+  'border-radius',
   ...ruleWithDirections('padding'),
   ...ruleWithDirections('margin'),
 ];
@@ -56,13 +60,29 @@ export const color = [
 ];
 
 export const font = [
+  'font',
   'font-family',
   'font-size',
   'font-weight',
+  'font-variant',
+  'font-kerning',
+  'font-language-override',
+  'font-size-adjust',
+  'font-stretch',
+  'font-style',
+  'font-synthesis',
+  'font-variant-alternates',
+  'font-variant-caps',
+  'font-variant-east-asian',
+  'font-variant-ligatures',
+  'font-variant-numeric',
+  'font-variant-position',
   'line-height',
   'text-align',
   'text-shadow',
   'text-decoration',
+  'text-indent',
+  'text-transform',
   'letter-spacing',
 ];
 
@@ -93,4 +113,23 @@ export const grid = [
   'grid-template-areas',
   'grid-template-columns',
   'grid-template-rows',
+];
+
+export const list = [
+  'list-style',
+  'list-style-image',
+  'list-style-position',
+  'list-style-type',
+];
+
+export const animation = [
+  'animation',
+  'animation-delay',
+  'animation-direction',
+  'animation-duration',
+  'animation-fill-mode',
+  'animation-iteration-count',
+  'animation-name',
+  'animation-play-state',
+  'animation-timing-function',
 ];
