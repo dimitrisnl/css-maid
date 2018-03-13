@@ -5,10 +5,13 @@ export default class Formatter {
   }
 
   initializeObj = groups => {
-    return Object.keys(groups).reduce((obj, key) => {
-      obj[key] = [];
-      return obj;
-    }, {});
+    return Object.keys(groups).reduce(
+      (obj, key) => {
+        obj[key] = [];
+        return obj;
+      },
+      { rest: [] }
+    );
   };
 
   getNodeName = node => {
@@ -17,11 +20,16 @@ export default class Formatter {
   };
 
   addNode = (node, nodeName, parentIdentifier) => {
+    let found = false;
     Object.keys(this.groups).forEach(type => {
-      if (this.groups[type].includes(nodeName)) {
+      if (!found && this.groups[type].includes(nodeName)) {
+        found = true;
         this.obj[type].push({ node, parentIdentifier, type });
       }
     });
+    if (!found) {
+      this.obj.rest.push({ node, parentIdentifier, type: 'rest' });
+    }
   };
   getNodes = () => {
     return Object.values(this.obj)
