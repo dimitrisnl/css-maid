@@ -2,6 +2,8 @@
 
 [https://cssmaid.netlify.com/](https://cssmaid.netlify.com/)
 
+![screen](assets/screen.png)
+
 ### Huh?
 
 Your CSS rules could look like this:
