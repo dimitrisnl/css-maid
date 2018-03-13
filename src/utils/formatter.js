@@ -5,26 +5,25 @@ export default class Formatter {
   }
 
   initializeObj = groups => {
-    const obj = {};
-    Object.keys(groups).forEach(key => (obj[key] = []));
-    return obj;
+    return Object.keys(groups).reduce((obj, key) => {
+      obj[key] = [];
+      return obj;
+    }, {});
   };
 
-  extractPropertyName = node => {
+  getNodeName = node => {
     const declaration = node.content.find(x => x.type === 'property');
     return declaration.content[0].content;
   };
 
-  addNode = (node, parent) => {
-    const propertyName = this.extractPropertyName(node);
-
+  addNode = (node, nodeName, parent) => {
     Object.keys(this.groups).forEach(key => {
-      if (this.groups[key].includes(propertyName)) {
+      if (this.groups[key].includes(nodeName)) {
         this.obj[key].push({ parent, node });
       }
     });
   };
-  finalize = () => {
+  getNodes = () => {
     return Object.values(this.obj)
       .filter(decl => decl.length > 0)
       .reduce((sum, curr) => [...sum, curr], []);
