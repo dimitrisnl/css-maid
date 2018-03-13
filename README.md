@@ -32,7 +32,7 @@ a:link, a:visited, a:hover, a:active {
 }
 ```
 
-We sort the properties based on
+We group properties by these types:
 
 1.  Positioning
 2.  Display
@@ -40,8 +40,10 @@ We sort the properties based on
 4.  Color
 5.  Font
 6.  Grid
-7.  Transitions
-8.  Anything Else
+7.  Transition
+8.  List
+9.  Animation
+10. Anything Else
 
 ### Licence
 
