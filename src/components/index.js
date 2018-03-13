@@ -11,7 +11,7 @@ export const Wrapper = styled('div')`
   justify-content: center;
 
   background: #77a1d3;
-  background: linear-gradient(to right, #e684ae, #79cbca, #77a1d3);
+  background: linear-gradient(to top, #e684ae, #79cbca, #77a1d3);
 `;
 
 export const Header = styled('h1')`
