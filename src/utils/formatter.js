@@ -1,17 +1,14 @@
 export default class Formatter {
   constructor(groups) {
     this.groups = { ...groups };
-    this.obj = this.initializeObj(groups);
+    this.obj = { ...this.initializeObj(groups), rest: [] };
   }
 
   initializeObj = groups => {
-    return Object.keys(groups).reduce(
-      (obj, key) => {
-        obj[key] = [];
-        return obj;
-      },
-      { rest: [] }
-    );
+    return Object.keys(groups).reduce((obj, key) => {
+      obj[key] = [];
+      return obj;
+    }, {});
   };
 
   getNodeName = node => {
@@ -24,7 +21,7 @@ export default class Formatter {
     Object.keys(this.groups).forEach(type => {
       if (!found && this.groups[type].includes(nodeName)) {
         found = true;
-        this.obj[type].push({ node, parentIdentifier, type });
+        this.obj[type].push({ node, nodeName, parentIdentifier, type });
       }
     });
     if (!found) {
@@ -34,6 +31,7 @@ export default class Formatter {
   getNodes = () => {
     return Object.values(this.obj)
       .filter(decl => decl.length > 0)
+      .map(decl => decl.sort((x, y) => x.nodeName > y.nodeName))
       .reduce((sum, curr) => [...sum, ...curr], []);
   };
 }
