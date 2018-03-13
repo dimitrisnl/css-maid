@@ -41,7 +41,7 @@ export const TextArea = styled('textarea')`
     'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter',
     'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono',
     'Nimbus Mono L', 'Courier New', Courier, monospace;
-  font-size: inherit;
+  font-size: 14px;
 
   border-radius: 8px;
   opacity: 0.9;
