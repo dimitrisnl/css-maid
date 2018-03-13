@@ -16,16 +16,16 @@ export default class Formatter {
     return declaration.content[0].content;
   };
 
-  addNode = (node, nodeName, parent) => {
-    Object.keys(this.groups).forEach(key => {
-      if (this.groups[key].includes(nodeName)) {
-        this.obj[key].push({ parent, node });
+  addNode = (node, nodeName, parentIdentifier) => {
+    Object.keys(this.groups).forEach(type => {
+      if (this.groups[type].includes(nodeName)) {
+        this.obj[type].push({ node, parentIdentifier, type });
       }
     });
   };
   getNodes = () => {
     return Object.values(this.obj)
       .filter(decl => decl.length > 0)
-      .reduce((sum, curr) => [...sum, curr], []);
+      .reduce((sum, curr) => [...sum, ...curr], []);
   };
 }
