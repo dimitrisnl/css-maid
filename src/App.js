@@ -4,7 +4,14 @@ import GithubCorner from 'react-github-corner';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 import { parseCSS } from './utils/parser';
-import { Wrapper, Header, TextArea, Button, Container } from './components';
+import {
+  Wrapper,
+  Header,
+  TextArea,
+  Button,
+  Container,
+  ButtonsRow,
+} from './components';
 
 class App extends Component {
   state = {
@@ -38,13 +45,13 @@ class App extends Component {
             value={this.state.formattedStyles}
           />
         </Container>
-        <div>
+        <ButtonsRow>
           <Button onClick={this.formatCSS}>Format</Button>
 
           <CopyToClipboard text={this.state.formattedStyles}>
             <Button>Copy to clipboard</Button>
           </CopyToClipboard>
-        </div>
+        </ButtonsRow>
 
         <GithubCorner
           href="https://github.com/DimitrisNL/css-maid"

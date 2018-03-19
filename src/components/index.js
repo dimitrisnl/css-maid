@@ -3,7 +3,7 @@ import styled from 'react-emotion';
 export const Wrapper = styled('div')`
   height: 100%;
   width: 100%;
-  padding: 1rem;
+  padding: 0 1rem;
   display: flex;
 
   flex-direction: column;
@@ -17,6 +17,8 @@ export const Wrapper = styled('div')`
 export const Header = styled('h1')`
   display: flex;
   padding: 0 2rem;
+  margin: 0;
+  height: 15%;
 
   justify-content: center;
   align-items: center;
@@ -49,10 +51,17 @@ export const TextArea = styled('textarea')`
   resize: none;
 `;
 
+export const ButtonsRow = styled('div')`
+  display: flex;
+  height: 15%;
+
+  align-items: center;
+`;
+
 export const Button = styled('button')`
   padding: 0.75rem 1.25rem;
   border: 3px solid #ffffff90;
-  margin: 2rem 1rem 0;
+  margin: 0 1rem 0;
 
   background: transparent;
   color: #fff;
@@ -64,6 +73,7 @@ export const Button = styled('button')`
 
   cursor: pointer;
   border-radius: 8px;
+  outline: none;
 
   &:hover {
     background: #ffffff20;
