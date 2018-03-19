@@ -41,7 +41,7 @@ class App extends Component {
             onChange={this.handleInput}
           />
           <TextArea
-            placeholder="Any changes will apper here"
+            placeholder="Any changes will appear here"
             value={this.state.formattedStyles}
           />
         </Container>
