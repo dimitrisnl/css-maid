@@ -1,5 +1,7 @@
 # CSS Maid
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/dimitrisnl/css-maid.svg)](https://greenkeeper.io/)
+
 [https://cssmaid.netlify.com/](https://cssmaid.netlify.com/)
 
 ![screen](assets/screen.png)
